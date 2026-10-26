@@ -1,4 +1,19 @@
-<div class="brand">
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameVault | Wiki, Rehber & Güncelleme Merkezi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
           <div class="brand-mark">G</div>
           <span>GameVault</span>
         </div>
@@ -12,3 +27,308 @@
           <a href="/updates.html">Güncellemeler</a>
           <a href="/faq.html">FAQ</a>
         </nav>
+
+        <div class="nav-actions">
+          <button class="btn secondary">Giriş</button>
+          <button class="btn primary">Kayıt Ol</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="anasayfa">
+      <section class="hero">
+        <div class="container hero-wrap">
+          <div>
+            <div class="eyebrow">Wiki • Rehber • Güncelleme</div>
+            <h1>Oyun bilgisi için <span class="gradient">tek adres</span></h1>
+            <p class="hero-copy">
+              Bloklar, moblar, sürümler, rehberler ve yenilikler tek sayfada. Yeni başlayanlardan profesyonellere kadar herkes için hazırlanmış bir oyun bilgi merkezi.
+            </p>
+
+            <div class="search-panel">
+              <input class="search-box" type="text" placeholder="Örn: Redstone, End, Başlangıç rehberi..." data-search-input data-search-target=".card, .guide-item" />
+              <button class="btn primary">Ara</button>
+            </div>
+
+            <div class="quick-stats">
+              <div class="stat">
+                <strong>3.2K+</strong>
+                <span>Wiki sayfası</span>
+              </div>
+              <div class="stat">
+                <strong>480+</strong>
+                <span>Rehber</span>
+              </div>
+              <div class="stat">
+                <strong>96</strong>
+                <span>Güncelleme</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="visual-sky"></div>
+            <div class="sun"></div>
+            <div class="mountains"></div>
+            <div class="forest"></div>
+
+            <div class="panel-card">
+              <div class="mini-tag">Öne çıkan</div>
+              <div class="mini-title">Patch 1.21 Update</div>
+              <div class="mini-meta">
+                Yeni bloklar, yeni mob mekanikleri ve zorlu yeni biome detayları. Güncelleme notlarını inceleyin.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="wiki" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Popüler Wiki</h2>
+            <a href="/wiki.html" class="section-actions">Tümünü Gör</a>
+          </div>
+
+          <div class="card-grid">
+            <article class="card" data-search="redstone blok mekanik otomasyon">
+              <a href="/redstone.html">
+                <div class="card-visual"></div>
+                <div class="card-content">
+                  <div class="kicker">Blok</div>
+                  <h3>Redstone</h3>
+                  <p>Yaylar, mantarlar, pompa sistemleri ve ileri seviye mekanik tasarımlar için temel rehber.</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="card" data-search="ender dragon boss end portal">
+              <a href="/enderdragon.html">
+                <div class="card-visual" style="background: linear-gradient(180deg, #2b2f4d, #1a1d33);"></div>
+                <div class="card-content">
+                  <div class="kicker">Boss</div>
+                  <h3>Ender Dragon</h3>
+                  <p>End bölgesi, portal hazırlığı ve düşman savaşı için adım adım bilgi.</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="card" data-search="netherite eşya zırh silah">
+              <a href="/netherite.html">
+                <div class="card-visual" style="background: linear-gradient(180deg, #2f2435, #1b1822);"></div>
+                <div class="card-content">
+                  <div class="kicker">Eşya</div>
+                  <h3>Netherite</h3>
+                  <p>Netherite üretimi, işleme ve en güçlü zırh ve silahların üretim bilgileri.</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="card" data-search="warden deep dark mob tehlike">
+              <a href="/warden.html">
+                <div class="card-visual" style="background: linear-gradient(180deg, #3d2d20, #201712);"></div>
+                <div class="card-content">
+                  <div class="kicker">Mob</div>
+                  <h3>Warden</h3>
+                  <p>Tekinsiz bölge, ses sinyalleri ve korkutucu düşman mekaniği hakkında detaylı açıklama.</p>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="rehberler" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Rehberler</h2>
+            <a href="/guides.html" class="section-actions">Hepsini Aç</a>
+          </div>
+
+          <div class="grid-3">
+            <article class="guide-item" data-search="başlangıç rehberi kaynak güvenli yaşam alanı">
+              <div class="guide-level">Başlangıç</div>
+              <h3>Başlangıç Rehberi</h3>
+              <p>İlk 24 saatte neler yapmalı, hangi kaynaklar öncelik olmalı ve güvenli yaşam alanı nasıl kurulmalı?</p>
+              <div class="meta-row">
+                <span>7 adım</span>
+                <span>Oku</span>
+              </div>
+            </article>
+
+            <article class="guide-item" data-search="redstone masterclass otomasyon devreleri">
+              <div class="guide-level">Orta Seviye</div>
+              <h3>Redstone Masterclass</h3>
+              <p>Temel mantık kapıları, piston devreleri, otomasyon ve ileri seviye mekanik tasarımları öğrenin.</p>
+              <div class="meta-row">
+                <span>12 adım</span>
+                <span>İncele</span>
+              </div>
+            </article>
+
+            <article class="guide-item" data-search="end savaşı portal boss strateji">
+              <div class="guide-level">İleri Seviye</div>
+              <h3>End Savaşı</h3>
+              <p>Portal hazırlığı, ekipman kurulumları, kaynak toplama ve boss savaşında doğru strateji.</p>
+              <div class="meta-row">
+                <span>9 adım</span>
+                <span>Görüntüle</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="guncellemeler" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Güncelleme Özetleri</h2>
+            <a href="/updates.html" class="section-actions">Son sürümler</a>
+          </div>
+
+          <div class="update-list">
+            <div class="update-panel">
+              <div class="version-box">
+                <div>
+                  <strong>Patch 1.21</strong>
+                  <span>Son güncelleme</span>
+                </div>
+                <button class="btn primary">Detay</button>
+              </div>
+
+              <div class="tags">
+                <span>Yeni mob</span>
+                <span>Biome</span>
+                <span>Blok</span>
+                <span>Oyun dengesi</span>
+              </div>
+
+              <ul class="ul">
+                <li>Yeni biyom eklemeleri</li>
+                <li>Çiftlik ve tarım sistemlerinde iyileştirme</li>
+                <li>Yeni mob davranışları</li>
+                <li>End ve Nether içerik zenginleştirmesi</li>
+              </ul>
+            </div>
+
+            <div class="update-panel">
+              <div class="section-header" style="margin-bottom: 16px;">
+                <h3 style="margin:0;">Son 3 güncelleme</h3>
+                <span class="section-actions">Tümü</span>
+              </div>
+
+              <div class="grid-3" style="grid-template-columns: 1fr;">
+                <article class="guide-item">
+                  <div class="guide-level">1.20.8</div>
+                  <h3>Hata düzeltmeleri</h3>
+                  <p>Mob davranışlarında düzenleme, keşif ve görev optimizasyonu.</p>
+                </article>
+
+                <article class="guide-item">
+                  <div class="guide-level">1.20.6</div>
+                  <h3>Yeni mekanikler</h3>
+                  <p>Yapılaştırma ve dekorasyon seçeneklerinde genişleme.</p>
+                </article>
+
+                <article class="guide-item">
+                  <div class="guide-level">1.20.4</div>
+                  <h3>Oyun dengesi</h3>
+                  <p>Yapı ölçeklenmesi, kaynak üretimi ve deneyim sistemi güncellendi.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="yorumlar" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Topluluk Yorumları</h2>
+            <div class="section-actions">Yorum Ekle</div>
+          </div>
+
+          <div class="comment-box">
+            <div class="comment-list">
+              <article class="comment">
+                <div class="comment-top">
+                  <div class="user">
+                    <div class="avatar">A</div>
+                    <span>Ayaz</span>
+                  </div>
+                  <time>2 saat önce</time>
+                </div>
+                <p>Başlangıç rehberi çok açıklayıcıydı. Özellikle ilk kaynak planlaması kısmı çok işime yaradı.</p>
+              </article>
+
+              <article class="comment">
+                <div class="comment-top">
+                  <div class="user">
+                    <div class="avatar">D</div>
+                    <span>Deniz</span>
+                  </div>
+                  <time>1 gün önce</time>
+                </div>
+                <p>Redstone rehberi çok iyi hazırlanmış. Geniş fakat anlaşılır bir anlatım var.</p>
+              </article>
+            </div>
+
+            <div class="form-wrap comment-form">
+              <input class="input" type="text" placeholder="Adınız / kullanıcı adınız" data-field="author" />
+              <textarea placeholder="Yorumunuzu yazın..." data-field="text"></textarea>
+              <button class="btn primary" type="button">Yorum Gönder</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">SSS / FAQ</h2>
+            <a href="/faq.html" class="section-actions">Daha fazla</a>
+          </div>
+
+          <div class="faq-grid">
+            <article class="faq-item">
+              <h4>Yeni başlayanlar için önerilen ilk rehber nedir?</h4>
+              <p>Başlangıç rehberi en doğru adım. Güvenli yaşam alanı kurulumu, temel kaynak verme ve ilk gece planı için idealdir.</p>
+            </article>
+
+            <article class="faq-item">
+              <h4>Yeni güncelleme notları nerede görünüyor?</h4>
+              <p>Güncellemeler sayfasından tüm sürüm özetlerine ulaşabilirsiniz. Sürüm detaylarını ve yeni içerikleri burada bulabilirsiniz.</p>
+            </article>
+
+            <article class="faq-item">
+              <h4>Wiki sayfaları nasıl düzenleniyor?</h4>
+              <p>Her sayfa blok, mob, eşya, biome ve mekanik başlıkları altında kategorize edilir. Arama kutusu ile hızlı erişim sağlanır.</p>
+            </article>
+
+            <article class="faq-item">
+              <h4>Topluluk yorumları güvenli mi?</h4>
+              <p>Evet. Yorumlar öncelikle kontrol edilir ve uygunsuz içerik filtrelenir. Bu sayede faydalı içerik ön planda kalır.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <div class="brand" style="font-size: 0.9rem;">
+          <div class="brand-mark" style="width: 22px;height:22px;font-size:10px;">G</div>
+          <span>GameVault</span>
+        </div>
+
+        <div class="foot-links">
+          <span>Wiki</span>
+          <span>Rehberler</span>
+          <span>Güncellemeler</span>
+          <span>Yorumlar</span>
+          <span>İletişim</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

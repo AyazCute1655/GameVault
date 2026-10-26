@@ -22,6 +22,10 @@ const loadComments = () => {
     const list = document.querySelector('.comment-list');
     if (!list) return;
 
+    // avoid duplicates if already rendered from static content
+    const existingCount = list.querySelectorAll('.comment').length;
+    if (existingCount > 0) return;
+
     items.forEach((item) => {
       const existing = document.createElement('article');
       existing.className = 'comment';
@@ -94,5 +98,21 @@ if (menuButton && navLinks) {
     navLinks.classList.toggle('open');
   });
 }
+
+const searchInputs = document.querySelectorAll('[data-search-input]');
+searchInputs.forEach((input) => {
+  const selector = input.dataset.searchTarget || '.card, .guide-item';
+  const items = document.querySelectorAll(selector);
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim().toLowerCase();
+
+    items.forEach((item) => {
+      const haystack = (item.dataset.search || item.textContent).toLowerCase();
+      const visible = !query || haystack.includes(query);
+      item.style.display = visible ? '' : 'none';
+    });
+  });
+});
 
 loadComments();
