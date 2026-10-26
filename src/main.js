@@ -1,10 +1,14 @@
-const submitBtn = document.getElementById('submitComment');
-const authorInput = document.getElementById('author');
-const textInput = document.getElementById('commentText');
-const list = document.querySelector('.comment-list');
+const commentForms = document.querySelectorAll('.comment-form');
 
-if (submitBtn && authorInput && textInput && list) {
-  submitBtn.addEventListener('click', () => {
+commentForms.forEach((form) => {
+  const button = form.querySelector('button');
+  const authorInput = form.querySelector('[data-field="author"]');
+  const textInput = form.querySelector('[data-field="text"]');
+  const list = document.querySelector('.comment-list');
+
+  if (!button || !authorInput || !textInput || !list) return;
+
+  button.addEventListener('click', () => {
     const author = authorInput.value.trim() || 'Anonim';
     const text = textInput.value.trim();
 
@@ -33,4 +37,4 @@ if (submitBtn && authorInput && textInput && list) {
     authorInput.value = '';
     textInput.value = '';
   });
-}
+});

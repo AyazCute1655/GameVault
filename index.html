@@ -19,12 +19,11 @@
         </div>
 
         <nav class="nav-links">
-          <a href="#anasayfa">Ana Sayfa</a>
-          <a href="#wiki">Wiki</a>
-          <a href="#rehberler">Rehberler</a>
-          <a href="#guncellemeler">Güncellemeler</a>
-          <a href="#yorumlar">Yorumlar</a>
-          <a href="#faq">FAQ</a>
+          <a href="/index.html">Ana Sayfa</a>
+          <a href="/wiki.html">Wiki</a>
+          <a href="/guides.html">Rehberler</a>
+          <a href="/updates.html">Güncellemeler</a>
+          <a href="/faq.html">FAQ</a>
         </nav>
 
         <div class="nav-actions">
@@ -86,7 +85,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Popüler Wiki</h2>
-            <div class="section-actions">Tümünü Gör</div>
+            <a href="/wiki.html" class="section-actions">Tümünü Gör</a>
           </div>
 
           <div class="card-grid">
@@ -133,7 +132,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Rehberler</h2>
-            <div class="section-actions">Hepsini Aç</div>
+            <a href="/guides.html" class="section-actions">Hepsini Aç</a>
           </div>
 
           <div class="grid-3">
@@ -174,7 +173,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Güncelleme Özetleri</h2>
-            <div class="section-actions">Son sürümler</div>
+            <a href="/updates.html" class="section-actions">Son sürümler</a>
           </div>
 
           <div class="update-list">
@@ -264,10 +263,10 @@
               </article>
             </div>
 
-            <div class="form-wrap">
-              <input class="input" id="author" type="text" placeholder="Adınız / kullanıcı adınız" />
-              <textarea id="commentText" placeholder="Yorumunuzu yazın..."></textarea>
-              <button class="btn primary" id="submitComment">Yorum Gönder</button>
+            <div class="form-wrap comment-form">
+              <input class="input" type="text" placeholder="Adınız / kullanıcı adınız" data-field="author" />
+              <textarea placeholder="Yorumunuzu yazın..." data-field="text"></textarea>
+              <button class="btn primary" type="button">Yorum Gönder</button>
             </div>
           </div>
         </div>
@@ -277,7 +276,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">SSS / FAQ</h2>
-            <div class="section-actions">Daha fazla</div>
+            <a href="/faq.html" class="section-actions">Daha fazla</a>
           </div>
 
           <div class="faq-grid">
