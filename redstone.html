@@ -1,141 +1,14 @@
-<!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameVault | Wiki</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
+<div class="brand">
           <div class="brand-mark">G</div>
           <span>GameVault</span>
         </div>
 
-        <nav class="nav-links">
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+
+        <nav class="nav-links" id="mainNav">
           <a href="/index.html">Ana Sayfa</a>
           <a href="/wiki.html">Wiki</a>
           <a href="/guides.html">Rehberler</a>
           <a href="/updates.html">Güncellemeler</a>
           <a href="/faq.html">FAQ</a>
         </nav>
-
-        <div class="nav-actions">
-          <button class="btn secondary">Giriş</button>
-          <button class="btn primary">Kayıt Ol</button>
-        </div>
-      </div>
-    </header>
-
-    <main class="container page-shell">
-      <aside class="sidebar">
-        <div class="panel-box">
-          <h3>Wiki Kategorileri</h3>
-          <ul>
-            <li><a href="/wiki.html">Bloklar</a></li>
-            <li><a href="/redstone.html">Redstone</a></li>
-            <li><a href="/enderdragon.html">Bosslar</a></li>
-            <li><a href="/netherite.html">Eşyalar</a></li>
-            <li><a href="/warden.html">Moblar</a></li>
-            <li><a href="/updates.html">Sürümler</a></li>
-          </ul>
-        </div>
-
-        <div class="panel-box">
-          <h3>Güncel</h3>
-          <ul>
-            <li><a href="/updates.html">Patch 1.21</a></li>
-            <li><a href="/wiki.html">Yeni moblar</a></li>
-            <li><a href="/redstone.html">Otomasyon</a></li>
-          </ul>
-        </div>
-      </aside>
-
-      <article class="article-page">
-        <div class="article-hero">
-          <div class="kicker">Blok</div>
-          <h1>Redstone</h1>
-          <p>Redstone, oyun içindeki elektrik benzeri mekanik sistemleri oluşturan temel bir kaynaktır. Güç, sinyaller ve otomasyon için kullanılır.</p>
-        </div>
-
-        <div class="info-grid">
-          <div class="info-box">
-            <span>Tür</span>
-            <strong>Kaynak / Mekanik</strong>
-          </div>
-          <div class="info-box">
-            <span>Bulunma</span>
-            <strong>Yeryüzü / Yeraltı</strong>
-          </div>
-          <div class="info-box">
-            <span>En yaygın kullanım</span>
-            <strong>Otomasyon</strong>
-          </div>
-        </div>
-
-        <div class="article-content">
-          <h2>Redstone nedir?</h2>
-          <p>Redstone, oyun dünyasında mekanik işleyişi sağlayan temel bir malzemedir. Kapılar, otomatik çiftlikler, gizli geçitler ve saat sistemleri kurmak için kullanılır.</p>
-
-          <h2>Temel bileşenler</h2>
-          <ul>
-            <li>Redstone dust</li>
-            <li>Repeater</li>
-            <li>Comparator</li>
-            <li>Piston</li>
-            <li>Lever / Button / Pressure plate</li>
-          </ul>
-
-          <h2>Nasıl kullanılır?</h2>
-          <p>Redstone dust, sinyali bir yerden başka bir yere taşır. Repeater ile sinyal süresi uzatılır, comparator ile nesnelerin doluluk oranı okunabilir. Birleştirildiğinde karmaşık sistemler oluşturulur.</p>
-
-          <h2>Örnek sistem</h2>
-          <p>Basit bir otomatik çiftlikte, tohumun ekimi için bir piston sistemi ve çit kapısı kurulabilir. Bu sayede kaynak üretimi manuel işlemlerden kurtulur.</p>
-        </div>
-
-        <div class="comment-box">
-          <h3>Yorumlar</h3>
-          <div class="comment-list">
-            <article class="comment">
-              <div class="comment-top">
-                <div class="user">
-                  <div class="avatar">K</div>
-                  <span>Kerem</span>
-                </div>
-                <time>3 saat önce</time>
-              </div>
-              <p>Redstone rehberi çok net anlatıyor. Özellikle repeater kısmı çok işime yaradı.</p>
-            </article>
-          </div>
-
-          <div class="form-wrap comment-form">
-            <input class="input" type="text" placeholder="Adınız / kullanıcı adınız" data-field="author" />
-            <textarea placeholder="Yorumunuzu yazın..." data-field="text"></textarea>
-            <button class="btn primary" type="button">Yorum Gönder</button>
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <footer>
-      <div class="container footer-wrap">
-        <div class="brand" style="font-size: 0.9rem;">
-          <div class="brand-mark" style="width: 22px;height:22px;font-size:10px;">G</div>
-          <span>GameVault</span>
-        </div>
-        <div class="foot-links">
-          <span>Wiki</span>
-          <span>Rehberler</span>
-          <span>Güncellemeler</span>
-          <span>FAQ</span>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>

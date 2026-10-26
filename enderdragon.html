@@ -1,125 +1,14 @@
-<!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameVault | Ender Dragon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
+<div class="brand">
           <div class="brand-mark">G</div>
           <span>GameVault</span>
         </div>
 
-        <nav class="nav-links">
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+
+        <nav class="nav-links" id="mainNav">
           <a href="/index.html">Ana Sayfa</a>
           <a href="/wiki.html">Wiki</a>
           <a href="/guides.html">Rehberler</a>
           <a href="/updates.html">Güncellemeler</a>
           <a href="/faq.html">FAQ</a>
         </nav>
-
-        <div class="nav-actions">
-          <button class="btn secondary">Giriş</button>
-          <button class="btn primary">Kayıt Ol</button>
-        </div>
-      </div>
-    </header>
-
-    <main class="container page-shell">
-      <aside class="sidebar">
-        <div class="panel-box">
-          <h3>Bosslar</h3>
-          <ul>
-            <li><a href="/enderdragon.html">Ender Dragon</a></li>
-            <li><a href="/warden.html">Warden</a></li>
-            <li><a href="/wiki.html">Ana Wiki</a></li>
-          </ul>
-        </div>
-      </aside>
-
-      <article class="article-page">
-        <div class="article-hero">
-          <div class="kicker">Boss</div>
-          <h1>Ender Dragon</h1>
-          <p>Ender Dragon, End bölgesinin ana düşmanı ve oyunda en kritik boss mücadelelerinden biridir. Sonraki aşama için gerekli olan portalın açılması ve ana ödülün alınması burada başlar.</p>
-        </div>
-
-        <div class="info-grid">
-          <div class="info-box">
-            <span>Yer</span>
-            <strong>End</strong>
-          </div>
-          <div class="info-box">
-            <span>Ödül</span>
-            <strong>Dragon Egg</strong>
-          </div>
-          <div class="info-box">
-            <span>Gereksinim</span>
-            <strong>Portal / Elytra</strong>
-          </div>
-        </div>
-
-        <div class="article-content">
-          <h2>Boss taktiği</h2>
-          <p>Ender Dragon ile savaşırken ana hedef, kanatların kırılması ve saldırı alanlarının kontrol edilmesidir. Uçuş sırasında üst taraftaki kristal yapıları yok etmek, düşman için büyük dezavantaj sağlar.</p>
-
-          <h2>Hazırlık</h2>
-          <ul>
-            <li>Yeterli zırh ve yüksek hasar</li>
-            <li>Yaralanmadan kaçış için pürüzlü platform</li>
-            <li>Başlangıç için yeterli ok / mızrak</li>
-            <li>Her ikisi için de iyileştirme seti</li>
-          </ul>
-
-          <h2>Önemi</h2>
-          <p>Ender Dragon yenildiğinde portal açılır, arena değişir ve oyuncu için yeni evreler ve kaynaklar gelir. Bu savaş, oyundaki son derece önemli dönüm noktalarından biridir.</p>
-        </div>
-
-        <div class="comment-box">
-          <h3>Yorumlar</h3>
-          <div class="comment-list">
-            <article class="comment">
-              <div class="comment-top">
-                <div class="user">
-                  <div class="avatar">E</div>
-                  <span>Emir</span>
-                </div>
-                <time>5 saat önce</time>
-              </div>
-              <p>Kristallerin önceliği çok önemli. Sadece o adım bile savaşın çok daha kolay olmasını sağlıyor.</p>
-            </article>
-          </div>
-
-          <div class="form-wrap comment-form">
-            <input class="input" type="text" placeholder="Adınız / kullanıcı adınız" data-field="author" />
-            <textarea placeholder="Yorumunuzu yazın..." data-field="text"></textarea>
-            <button class="btn primary" type="button">Yorum Gönder</button>
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <footer>
-      <div class="container footer-wrap">
-        <div class="brand" style="font-size: 0.9rem;">
-          <div class="brand-mark" style="width: 22px;height:22px;font-size:10px;">G</div>
-          <span>GameVault</span>
-        </div>
-        <div class="foot-links">
-          <span>Wiki</span>
-          <span>Rehberler</span>
-          <span>Güncellemeler</span>
-          <span>FAQ</span>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>

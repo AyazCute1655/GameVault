@@ -1,124 +1,14 @@
-<!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameVault | Netherite</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
+<div class="brand">
           <div class="brand-mark">G</div>
           <span>GameVault</span>
         </div>
 
-        <nav class="nav-links">
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+
+        <nav class="nav-links" id="mainNav">
           <a href="/index.html">Ana Sayfa</a>
           <a href="/wiki.html">Wiki</a>
           <a href="/guides.html">Rehberler</a>
           <a href="/updates.html">Güncellemeler</a>
           <a href="/faq.html">FAQ</a>
         </nav>
-
-        <div class="nav-actions">
-          <button class="btn secondary">Giriş</button>
-          <button class="btn primary">Kayıt Ol</button>
-        </div>
-      </div>
-    </header>
-
-    <main class="container page-shell">
-      <aside class="sidebar">
-        <div class="panel-box">
-          <h3>Eşyalar</h3>
-          <ul>
-            <li><a href="/netherite.html">Netherite</a></li>
-            <li><a href="/redstone.html">Redstone</a></li>
-            <li><a href="/wiki.html">Wiki</a></li>
-          </ul>
-        </div>
-      </aside>
-
-      <article class="article-page">
-        <div class="article-hero">
-          <div class="kicker">Eşya</div>
-          <h1>Netherite</h1>
-          <p>Netherite, oyunun en güçlü zırh ve silah üretim malzemesidir. Nether bölgesinde çıkarılan ancient debris ile elde edilir ve en iyi ekipmanlar için temel oluşturur.</p>
-        </div>
-
-        <div class="info-grid">
-          <div class="info-box">
-            <span>Kaynak</span>
-            <strong>Ancient Debris</strong>
-          </div>
-          <div class="info-box">
-            <span>Bulunma</span>
-            <strong>Nether</strong>
-          </div>
-          <div class="info-box">
-            <span>Kullanım</span>
-            <strong>Zırh / Silah / Alet</strong>
-          </div>
-        </div>
-
-        <div class="article-content">
-          <h2>Nasıl elde edilir?</h2>
-          <p>Ancient Debris, Nether bölgesinde derinlerde bulunur. Bu maden eritilerek Netherite Scrap elde edilir ve ardından Gold ile birleştirilerek Netherite Ingots üretilir.</p>
-
-          <h2>Önemi</h2>
-          <ul>
-            <li>En yüksek dayanıklılık</li>
-            <li>Artan hasar ve koruma</li>
-            <li>Lav ve yanmaya karşı daha güçlü direnç</li>
-          </ul>
-
-          <h2>İşleme</h2>
-          <p>Netherite zırh ve silahlar, temel demir veya elmas ekipmanların üzerine Netherite Ingots eklenerek üretilebilir. Özellikle son aşama içeriklerde büyük avantaj sağlar.</p>
-        </div>
-
-        <div class="comment-box">
-          <h3>Yorumlar</h3>
-          <div class="comment-list">
-            <article class="comment">
-              <div class="comment-top">
-                <div class="user">
-                  <div class="avatar">M</div>
-                  <span>Mehmet</span>
-                </div>
-                <time>6 saat önce</time>
-              </div>
-              <p>Netherite üretimi zahmetli ama sonunda çok değerli. En güçlü ekipman için kesinlikle gerekli.</p>
-            </article>
-          </div>
-
-          <div class="form-wrap comment-form">
-            <input class="input" type="text" placeholder="Adınız / kullanıcı adınız" data-field="author" />
-            <textarea placeholder="Yorumunuzu yazın..." data-field="text"></textarea>
-            <button class="btn primary" type="button">Yorum Gönder</button>
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <footer>
-      <div class="container footer-wrap">
-        <div class="brand" style="font-size: 0.9rem;">
-          <div class="brand-mark" style="width: 22px;height:22px;font-size:10px;">G</div>
-          <span>GameVault</span>
-        </div>
-        <div class="foot-links">
-          <span>Wiki</span>
-          <span>Rehberler</span>
-          <span>Güncellemeler</span>
-          <span>FAQ</span>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>

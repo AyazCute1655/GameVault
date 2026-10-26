@@ -1,82 +1,14 @@
-<!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameVault | FAQ</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
+<div class="brand">
           <div class="brand-mark">G</div>
           <span>GameVault</span>
         </div>
 
-        <nav class="nav-links">
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+
+        <nav class="nav-links" id="mainNav">
           <a href="/index.html">Ana Sayfa</a>
           <a href="/wiki.html">Wiki</a>
           <a href="/guides.html">Rehberler</a>
           <a href="/updates.html">Güncellemeler</a>
           <a href="/faq.html">FAQ</a>
         </nav>
-
-        <div class="nav-actions">
-          <button class="btn secondary">Giriş</button>
-          <button class="btn primary">Kayıt Ol</button>
-        </div>
-      </div>
-    </header>
-
-    <main class="container page-shell narrow">
-      <div class="article-page">
-        <div class="page-header">
-          <div class="kicker">FAQ</div>
-          <h1>Sık Sorulan Sorular</h1>
-        </div>
-
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>Yeni başlayanlar hangi rehberi okumalı?</summary>
-            <p>Başlangıç rehberi en doğru ilk adım olacaktır. Güvenli yaşam alanı, temel kaynaklar ve ilk gece planlaması burada anlatılır.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Redstone öğrenmek ne kadar sürer?</summary>
-            <p>Temeller birkaç saatlik çalışma ile öğrenilebilir; ileri seviye otomasyon için düzenli pratik gerekir.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Güncellemeler nereden takip edilir?</summary>
-            <p>Güncelleme sayfasından tüm patch notlarına, yeni özelliklere ve düzenlemelere erişebilirsiniz.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Yorum yazabilir miyim?</summary>
-            <p>Evet, tüm içerik sayfalarında yorum formu bulunur. Yorumlar topluluk için değerlidir.</p>
-          </details>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="container footer-wrap">
-        <div class="brand" style="font-size: 0.9rem;">
-          <div class="brand-mark" style="width: 22px;height:22px;font-size:10px;">G</div>
-          <span>GameVault</span>
-        </div>
-        <div class="foot-links">
-          <span>Wiki</span>
-          <span>Rehberler</span>
-          <span>Güncellemeler</span>
-          <span>FAQ</span>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
